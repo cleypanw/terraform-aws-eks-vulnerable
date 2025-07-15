@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: log4shell-vuln
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: log4shell
+  template:
+    metadata:
+      labels:
+        app: log4shell
+    spec:
+      containers:
+      - name: log4shell
+        image: ghcr.io/christophetd/log4shell-vulnerable-app
+        ports:
+        - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: log4shell-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: log4shell
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080

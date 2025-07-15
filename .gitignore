@@ -1,0 +1,77 @@
+####################################
+# Terraform
+####################################
+**/.terraform/
+**/.terraform.lock.hcl
+**/*.tfstate
+**/*.tfstate.backup
+**/*.tfvars
+**/*.auto.tfvars
+**/*.tfplan
+**/*.log
+**/crash.log
+
+####################################
+# IDEs & editors
+####################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+####################################
+# macOS
+####################################
+.DS_Store
+
+####################################
+# Windows
+####################################
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+####################################
+# Node (si applicable)
+####################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+####################################
+# Python (si applicable)
+####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.env
+.venv/
+env/
+venv/
+Pipfile.lock
+
+####################################
+# Logs
+####################################
+*.log
+
+####################################
+# Archives / binaries
+####################################
+*.zip
+*.tar.gz
+*.tgz
+*.bak
+*.tmp
+*.old
+
+####################################
+# System files
+####################################
+*.orig
+*.rej
+*.un~
